@@ -1,12 +1,11 @@
 #include<iostream>
 using namespace std;
+
 int main()
 {
-    int i=51;
-    while(i<=99)
+    char i;
+    for(i='A';i<='Z';i++)
     {
         cout<<i<<endl;
-        i++;
     }
-    return 0;
 }

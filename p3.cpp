@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    int i=51;
-    while(i<=99)
+    int i=10;
+    while(i>=1)
     {
         cout<<i<<endl;
-        i++;
+        i--;
     }
     return 0;
 }
