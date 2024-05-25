@@ -27,6 +27,8 @@ class flight
 
     public :
 
+    
+
     void FEEDINFO()
     {
         cout << "Enter Flight Number. : ";
