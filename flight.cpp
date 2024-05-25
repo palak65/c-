@@ -27,7 +27,7 @@ class flight
 
     public :
 
-    
+
 
     void FEEDINFO()
     {
