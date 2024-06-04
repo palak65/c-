@@ -14,22 +14,34 @@ int getvolume()
 {
     return l*w*h;
 }
-box operator*(box &n)
+box operator+(box &n)
 {
     box t;
-    t.l=l*n.l;
-    t.w=l*n.w;
-    t.h=l*n.h;
+    t.l=l+n.l;
+    t.w=l+n.w;
+    t.h=l+n.h;
+    return t;
+}
+box operator++()
+{
+    box t;
+    t.l=++l;
+    t.w=++w;
+    t.h=++h;
     return t;
 }
 };
 int main()
 {
-    box a,b,c;
-    a.setdata(3,3,3);
-    b.setdata(2,2,2);
+    box a,b,c,d;
+    a.setdata(2,2,2);
+    b.setdata(4,4,4);
     cout<<"volume of A is:"<<a.getvolume()<<endl;
     cout<<"volume of B is:"<<b.getvolume()<<endl;
-    c=a-b;
+    c=a+b;
      cout<<"volume of C is:"<<c.getvolume()<<endl;
+     d=++c;
+    cout<<"volume of D is:"<<d.getvolume()<<endl;
+
+
 }

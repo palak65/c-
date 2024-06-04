@@ -14,12 +14,12 @@ int getvolume()
 {
     return l*w*h;
 }
-box operator*(box &n)
+box operator-(box &n)
 {
     box t;
-    t.l=l*n.l;
-    t.w=l*n.w;
-    t.h=l*n.h;
+    t.l=l-n.l;
+    t.w=l-n.w;
+    t.h=l-n.h;
     return t;
 }
 };

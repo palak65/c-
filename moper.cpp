@@ -26,10 +26,10 @@ box operator*(box &n)
 int main()
 {
     box a,b,c;
-    a.setdata(3,3,3);
+    a.setdata(4,4,4);
     b.setdata(2,2,2);
     cout<<"volume of A is:"<<a.getvolume()<<endl;
     cout<<"volume of B is:"<<b.getvolume()<<endl;
-    c=a-b;
+    c=a*b;
      cout<<"volume of C is:"<<c.getvolume()<<endl;
-}
+}   
