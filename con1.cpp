@@ -25,6 +25,6 @@ int shape(int l,int b, int h)
 int main()
 {
     solid s;
-    s.shape(2,3,3);
+    s.shape(3);
 }
 

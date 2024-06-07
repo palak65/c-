@@ -23,6 +23,6 @@ class area
 int main()
 {
     area a;
-    a.shape(3);
+    a.shape(3,8);
     a.hello(5);
 }

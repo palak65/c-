@@ -1,8 +1,12 @@
 #include<iostream>
 
 using namespace std;
-
-int main()
+class large
+{
+    int a,b,c;
+    public:
+    friend large(int ,int,int);
+}
 {
     int a, b,c;
     cout << "Enter the first number: ";
@@ -26,7 +30,6 @@ int main()
             cout << " c is the largest number";
         }
 
-    
+    }
 
     }
-}
