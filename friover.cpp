@@ -17,9 +17,9 @@ int getvolume()
  friend box operator+(box m,box n)
 {
     box t;
-    t.l=m.l-n.l;
-    t.w=m.w-n.w;
-    t.h=m.h-n.h;
+    t.l=m.l+n.l;
+    t.w=m.w+n.w;
+    t.h=m.h+n.h;
     return t;
 }
  friend box operator++(box n,int)
