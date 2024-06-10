@@ -30,6 +30,7 @@ class BOOK
 
     void PURCHASE()
     {
+        
         int numcopies;
         cout << "How Many Copies : ";
         cin >> numcopies;
