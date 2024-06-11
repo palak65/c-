@@ -27,7 +27,7 @@ class large
         }
         else
         {
-            cout << " c is the largest number";
+            cout << "c is the largest number";
         }
 
     }
