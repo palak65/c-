@@ -1,35 +1,48 @@
+
 #include<iostream>
 using namespace std;
-class box
-{
-    int l,w,h;
-    public:
-    void setdata(int a,int b,int c)
-    {
-        l=a,w=b,h=c;
+class Student {
+protected:
+    string name;
+    int rollNo;
+
+public:
+    Student(string n, int r) {
+        name = n;
+        rollNo = r;
     }
 
-
-int getvolume()
-{
-    return l*w*h;
-}
-box operator*(box &n)
-{
-    box t;
-    t.l=l*n.l;
-    t.w=l*n.w;
-    t.h=l*n.h;
-    return t;
-}
+    void displayStudentInfo() {
+        cout << "Name: " << name << endl;
+        cout << "Roll No: " << rollNo << endl;
+    }
 };
-int main()
-{
-    box a,b,c;
-    a.setdata(3,3,3);
-    b.setdata(2,2,2);
-    cout<<"volume of A is:"<<a.getvolume()<<endl;
-    cout<<"volume of B is:"<<b.getvolume()<<endl;
-    c=a-b;
-     cout<<"volume of C is:"<<c.getvolume()<<endl;
+
+// Derived class: Result (inherits from Student)
+class Result : public Student {
+private:
+    int maths, science, english;
+
+public:
+    Result(string n, int r, int m, int s, int e) : Student(n, r) {
+        maths = m;
+        science = s;
+        english = e;
+    }
+
+    void displayResult() {
+        displayStudentInfo(); // calling base class method
+        cout << "Maths: " << maths << endl;
+        cout << "Science: " << science << endl;
+        cout << "English: " << english << endl;
+        cout << "Total: " << maths + science + english << endl;
+        cout << "Average: " << (maths + science + english) / 3.0 << endl;
+    }
+};
+
+int main() {
+    Result student1("John Doe", 1, 80, 70, 90);
+    student1.displayResult();
+
+    return 0;
 }

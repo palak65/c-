@@ -6,7 +6,7 @@ class Student
 {
     protected :
     string name;
-    int roll_no , math , sci , guj;
+    int roll_no , math , sci ,eng;
 
     public :
 
@@ -20,8 +20,8 @@ class Student
         cin >> math;
         cout <<"Enter Science Marks :";
         cin >> sci;
-        cout <<"Enter Gujrati Marks :";
-        cin >> guj;
+        cout <<"Enter eng Marks :";
+        cin >> eng;
 
     }
 };
@@ -36,14 +36,14 @@ class Result : protected Student
     void setData()
     {
         getData();
-        total = math + sci + guj;
+        total = math + sci + eng;
         per = total / 3 ;
 
         cout <<"Total Marks : " << total << endl;
         cout <<"Percentage : " << per << endl;
 
-        cout << endl << "Name\t" << "Rollno.\t" << "Maths\t" << "Science\t" << "Gujrati\t" << "Total\t" << "Percen\t" << endl;
-        cout << endl << name << "\t"<< roll_no << "\t"<< math << "\t"<< sci << "\t"<< guj << "\t"<< total << "\t"<< per << "\t" << endl;
+        cout << endl << "Name\t" << "Rollno.\t" << "Maths\t" << "Science\t" << "eng\t" << "Total\t" << "Percen\t" << endl;
+        cout << endl << name << "\t"<< roll_no << "\t"<< math << "\t"<< sci << "\t"<< eng << "\t"<< total << "\t"<< per << "\t" << endl;
     }    
 };
 
