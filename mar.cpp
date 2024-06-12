@@ -49,7 +49,7 @@ class Result : protected Student
 
 int main()
 {
-    Result result;
+    Result r;
 
-    result.setData();
+    r.setData();
 }
