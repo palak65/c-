@@ -25,13 +25,14 @@ class Fish
 
 class Animal : protected Bird , protected Fish
 {
-    public :
+   public:
 
     void animal()
     {
-        // cout <<"Animal Can : " << endl;
+        
         fly();
         swim();
+       
     }
 };
 

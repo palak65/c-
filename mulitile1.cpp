@@ -4,8 +4,7 @@ using namespace std;
 
 class Bird
 {
-    
-  protected:
+    public :
 
     void fly()
     {
@@ -13,31 +12,31 @@ class Bird
     }
 };
 
-class Fish
+class Fish  : public Bird
 {
-  protected :
+    public :
 
     void swim()
     {
+        fly();
         cout <<"Fish Can Swim " << endl;
     }
 };
 
-class Animal : protected Bird , protected Fish
+class Animal : public Fish
 {
     public :
 
     void animal()
     {
-        // cout <<"Animal Can : " << endl;
-        fly();
+     
         swim();
     }
 };
 
 int main()
 {
-    Animal a;
+    Animal ani;
 
-    a.animal();
+    ani.animal();
 }
