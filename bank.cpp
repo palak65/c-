@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 class Bank
-{ public :
+{ 
+    public :
     string acc_name;
     double balance;
 
@@ -18,12 +19,12 @@ class Bank
         balance =2000;
     }
 
- void Deposit(double ammount)
+ void Deposit(double amount)
     {
-        if (ammount > 0)
+        if (amount > 0)
         {
-            balance += ammount;
-            cout << "Deposite Ammount : " << ammount << endl;
+            balance += amount;
+            cout << "Deposite Amount : " << amount << endl;
         }
 
         else
@@ -32,12 +33,12 @@ class Bank
         }
     }
 
-    void Withdraw(double ammount)
+    void Withdraw(double amount)
     {
-        if (ammount > 0 && ammount <= balance)
+        if (amount > 0 && amount <= balance)
         {
-            balance -= ammount;
-            cout << "With Draw Ammount : " << ammount << endl;
+            balance -= amount;
+            cout << "With Draw Ammount : " << amount << endl;
         }
         else
         {
@@ -55,11 +56,8 @@ int main()
 {
     string name;
     double ac;
-
-  
-
-   
-   Bank  account;
+    
+    Bank  account;
    cout<<account.acc_name<<endl;
    cout<<account.balance;
     int choice;
