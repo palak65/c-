@@ -15,12 +15,12 @@ static int hello()
     return a;
 }
 };
-int test :: a=55;
+int test :: a=5;
 int main()
 {
-    // cout<<"inital stage:"<<test::a<<endl;
+    cout<<"inital stage:"<<test::a<<endl;
     cout<<"inital stage:"<<test::hello()<<endl;
     test t,a,s,d,f;
-    // cout<<"inital stage:"<<test::a<<endl;
+    cout<<"inital stage:"<<test::a<<endl;
     cout<<"inital stage:"<<test::hello()<<endl;
 }
